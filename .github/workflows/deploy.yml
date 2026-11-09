@@ -25,6 +25,8 @@ jobs:
           cache: npm
       - run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
       - run: npm run build
+        env:
+          VITE_BASE_PATH: /Alaa_App/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

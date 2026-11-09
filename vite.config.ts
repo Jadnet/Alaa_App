@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
-    base: '/Alaa_App/',
+    base: process.env.VITE_BASE_PATH || '/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
