@@ -1,0 +1,6 @@
+{
+  "name": "Amanah Crédit - Gestion des Traites",
+  "description": "Application mobile de gestion des crédits mensuels, suivi des traites, alertes de retard, relances WhatsApp directes et contrats PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

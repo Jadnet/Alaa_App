@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-display: "Cinzel", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-arabic: "Tajawal", "Plus Jakarta Sans", sans-serif;
+
+  --color-olive-950: #12190E;
+  --color-olive-900: #24321D;
+  --color-olive-800: #34472B;
+  --color-olive-700: #465F3A;
+  --color-olive-600: #59784B;
+
+  --color-sand-50: #FAF8F5;
+  --color-sand-100: #F4EFEA;
+  --color-sand-200: #ECE5DC;
+  --color-sand-300: #E0D4C5;
+  --color-sand-400: #CFBEA9;
+
+  --color-gold-500: #C29B38;
+  --color-gold-600: #A88329;
+}
+
+/* Custom smooth scrollbar in olive */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(36, 50, 29, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(36, 50, 29, 0.4);
+}
+
+/* Print Styles for Printable Invoices and Contracts */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-area {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}

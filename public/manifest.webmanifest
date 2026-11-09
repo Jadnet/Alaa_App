@@ -1,0 +1,41 @@
+{
+  "name": "Taysir - Gestion des Traites",
+  "short_name": "Taysir",
+  "description": "Application mobile de gestion des credits mensuels, suivi des traites, alertes de retard, relances WhatsApp et contrats PDF.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3EFEA",
+  "theme_color": "#24321D",
+  "lang": "fr",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nouveau credit",
+      "short_name": "Nouveau",
+      "url": "/?view=new",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
